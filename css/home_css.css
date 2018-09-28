@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font:normal 100% Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+  overflow-y:hidden !important;
+  overflow-x: hidden !important;
+}
+
+
+.page-wrapper{
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.left-section{
+  flex: 2;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-section{
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20%;
+}
+
+.links{
+  flex: 2;
+  padding-top: 10%;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-section{
+  flex: 7;
+  flex-direction: column;
+  display: flex;
+}
+
+.title-name{
+  flex: 4;
+  flex-direction: column;
+  align-self: left;
+  padding: 4%;
+  width: 80%;
+}
+
+.website-content{
+  flex: 20;
+  flex-direction: column;
+
+}
+
+#myname{
+  font-size: 80px;
+}
+
+#description{
+  font-size: 25px;
+  text-align: justify;
+}
+
+
+.icons{
+  display:inline-block;
+  float: left;
+  width:100%;
+  margin:0;
+}
+
+.fb, .ig, .lin, .git, .twit, .mail, .res{
+  color:#000000;
+}
+
+.ico{
+    border: 2px solid black;
+    border-radius: 70%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    position: relative;
+    background: transparent;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    margin: 22px;
+}
