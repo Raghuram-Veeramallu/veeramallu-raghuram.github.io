@@ -1,73 +1,58 @@
 body {
+  padding: 0;
   margin: 0;
-  font:normal 100% Arial, Helvetica, sans-serif;
 }
-
-.wrapper{
-  overflow-y:hidden !important;
-  overflow-x: hidden !important;
-}
-
 
 .page-wrapper{
-  display: flex;
-  position: relative;
-  justify-content: center;
+  overflow-y:hidden !important;
+  overflow-x: hidden !important;
+  width: 100%;
+  height: 100%;
 }
 
-.left-section{
-  flex: 2;
-  flex-direction: column;
+.content{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
+.js{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #182327;
+}
+
 .image-section{
   flex: 1;
-  flex-direction: column;
+  padding-top: 8%;
   align-items: center;
   justify-content: center;
-  padding-top: 20%;
+}
+
+.name-section{
+  flex: 1;
+  padding: 3%;
+  width: 80%;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+}
+
+#title{
+  font-size: 100px;
+  font-family: ailerons;
+  color: #B2AFAC;
+  text-align: center;
+  align-self: center;
 }
 
 .links{
-  flex: 2;
-  padding-top: 10%;
-  width: 80%;
-  align-items: center;
-  justify-content: center;
+  flex: 1;
+  padding: 1%;
+  background: #42413D;
 }
-
-.right-section{
-  flex: 7;
-  flex-direction: column;
-  display: flex;
-}
-
-.title-name{
-  flex: 4;
-  flex-direction: column;
-  align-self: left;
-  padding: 4%;
-  width: 80%;
-}
-
-.website-content{
-  flex: 20;
-  flex-direction: column;
-
-}
-
-#myname{
-  font-size: 80px;
-}
-
-#description{
-  font-size: 25px;
-  text-align: justify;
-}
-
 
 .icons{
   display:inline-block;
@@ -76,20 +61,64 @@ body {
   margin:0;
 }
 
-.fb, .ig, .lin, .git, .twit, .mail, .res{
-  color:#000000;
+
+.lin, .git, .fb, .twit, .mail, .res{
+  color:#959492;
 }
 
 .ico{
-    border: 2px solid black;
-    border-radius: 70%;
+    border: 2px solid #FFCE2B;
+    border-radius: 50%;
     display: inline-block;
     width: 50px;
     height: 50px;
-    padding: 12px;
+    padding: 11px;
     position: relative;
     background: transparent;
     transition: all 0.2s ease;
     text-decoration: none;
-    margin: 22px;
+    margin: 22px 8px;
+}
+
+.ico-res{
+  border: 2px solid #FFCE2B;
+  border-radius: 50%;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 11px;
+  position: relative;
+  background: transparent;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  margin: 22px 8px;
+}
+
+.ico:hover{
+  transform: translateY(-4px);
+}
+
+.ico-res:hover{
+  transform: translateY(-4px);
+}
+.ico:hover .fb{
+  color: #B2AFAC;
+}
+.ico:hover .lin{
+  color: #B2AFAC;
+}
+.ico:hover .git{
+  color: #B2AFAC;
+}
+.ico:hover .ig{
+  color: #B2AFAC;
+}
+.ico:hover .mail{
+  color: #B2AFAC;
+}
+.ico:hover .twit{
+  color: #B2AFAC;
+}
+.ico-res:hover .res{
+  color: #B2AFAC;
 }
