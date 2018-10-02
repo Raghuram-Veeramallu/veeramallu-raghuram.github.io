@@ -3,6 +3,11 @@ body {
   margin: 0;
 }
 
+@font-face{
+    font-family: "Ailerons";
+    src: url('./css/Ailerons/Ailerons.otf');
+}
+
 .page-wrapper{
   overflow-y:hidden !important;
   overflow-x: hidden !important;
@@ -18,10 +23,11 @@ body {
 }
 
 .js{
-  position: relative;
+  position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #182327;
+  z-index: -20;
+  background-color: #42413D;
 }
 
 .image-section{
@@ -41,8 +47,8 @@ body {
 }
 
 #title{
-  font-size: 100px;
-  font-family: ailerons;
+  font-size: 90px;
+  font-family: 'Montserrat', sans-serif;
   color: #B2AFAC;
   text-align: center;
   align-self: center;
@@ -51,7 +57,6 @@ body {
 .links{
   flex: 1;
   padding: 1%;
-  background: #42413D;
 }
 
 .icons{
@@ -62,7 +67,7 @@ body {
 }
 
 
-.lin, .git, .fb, .twit, .mail, .res{
+.lin, .git, .twit, .fb, .mail, .res{
   color:#959492;
 }
 
@@ -78,29 +83,13 @@ body {
     transition: all 0.2s ease;
     text-decoration: none;
     margin: 22px 8px;
-}
-
-.ico-res{
-  border: 2px solid #FFCE2B;
-  border-radius: 50%;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  padding: 11px;
-  position: relative;
-  background: transparent;
-  transition: all 0.2s ease;
-  text-decoration: none;
-  margin: 22px 8px;
+    transform: scale(1);
 }
 
 .ico:hover{
-  transform: translateY(-4px);
+  transform: scale(1.3);
 }
 
-.ico-res:hover{
-  transform: translateY(-4px);
-}
 .ico:hover .fb{
   color: #B2AFAC;
 }
@@ -119,6 +108,6 @@ body {
 .ico:hover .twit{
   color: #B2AFAC;
 }
-.ico-res:hover .res{
+.ico:hover .res{
   color: #B2AFAC;
 }
