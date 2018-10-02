@@ -46,7 +46,7 @@ body {
   align-content: center;
 }
 
-#title{
+.title{
   font-size: 90px;
   font-family: 'Montserrat', sans-serif;
   color: #B2AFAC;
@@ -110,4 +110,26 @@ body {
 }
 .ico:hover .res{
   color: #B2AFAC;
+}
+
+@media screen and (max-width: 720px) {
+
+.image-section{
+  padding-top: 7%;
+  transform: scale(0.8);
+}
+
+.title{
+  font-size: 45px;
+}
+
+.name-section{
+  width: 100%;
+  padding: 1%;
+}
+
+.icons{
+  transform: scale(0.8);
+}
+
 }

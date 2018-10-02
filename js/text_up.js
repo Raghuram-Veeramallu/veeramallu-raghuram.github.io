@@ -1,13 +1,14 @@
 var i = 1;
 var j= -1;
-var name = ["HARI","SAI","RAGHURAM","VEERAMALLU"];
-var a=name[0];
+var list = ["HARI SAI RAGHURAM VEERAMALLU"];
+var a=list[0];
 var len = list.length;
 var num = 0;
 
-function display_text(){
+function txt(){
 	var strs = a.slice(0,i);
-	$("#textdisp").html(strs +'|');
+
+	$("#myname").html(strs);
 
 	if(i >= 0)
 	{
